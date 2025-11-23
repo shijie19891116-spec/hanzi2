@@ -1,0 +1,5 @@
+{
+  "name": "shijie汉字笔画学习器",
+  "description": "An interactive Chinese character stroke order learning tool powered by Gemini and Hanzi Writer.",
+  "requestFramePermissions": []
+}
