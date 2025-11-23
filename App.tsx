@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import HanziWriter from 'hanzi-writer';
 import { fetchCharacterDetails } from './services/geminiService';
 import { CharacterData } from './types';
