@@ -2,7 +2,8 @@ import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { CharacterData } from "../types";
 
 // Initialize Gemini Client
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// Cast to string because process.env.API_KEY is defined via Vite config
+const ai = new GoogleGenAI({ apiKey: (process.env.API_KEY as string) });
 
 export const fetchCharacterDetails = async (char: string): Promise<CharacterData> => {
   const modelId = "gemini-2.5-flash";
